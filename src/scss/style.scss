@@ -1,3 +1,8 @@
+:root 
+{
+    --plyr-color-main: #6c930b;
+}
+
 body
 {
     margin: 0;
@@ -475,6 +480,88 @@ section.products_type
                 font-size: 18px;
                 font-weight: 700;
                 margin: 20px 0;
+            }
+        }
+    }
+}
+
+section.sect-quote
+{
+    overflow-y: hidden;
+    .quote
+    {
+        width: 60%;
+        position: relative;
+        font-size: 18px;
+    }
+
+    .quote:after
+    {
+        content: url(../images/icons/quote.png);
+        position: absolute;
+        right: 100%;
+        top: 0;
+        padding-right: 25px;
+    }
+
+    .quote:before
+    {
+        content: url(../images/icons/quote.png);
+        position: absolute;
+        left: 100%;
+        bottom: 0;
+        padding-left: 25px;
+        transform: rotate(180deg);
+    }
+
+    .quote-wrapper
+    {
+        position: relative;
+    }
+
+    .quote-wrapper:after
+    {
+        content: '';
+        position: absolute;
+        right: 100px;
+        top: -90px;
+        background-image: url(../images/quote.png);
+        width: 300px;
+        height: 460px;
+        background-size: 145%;
+        background-position: center top;
+    }
+
+    .video-wrapper
+    {
+        display: flex;
+        flex-wrap: wrap;
+
+        .col
+        {
+            width: 50%;
+        }
+
+        .col:first-child
+        {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            text-align: right;
+            padding-right: 40px;
+            font-weight: 700;
+
+            span
+            {
+                position: relative;
+            }
+
+            span:after
+            {
+                content: url(../images/icons/video_arrow.png);
+                position: absolute;
+                right: -20px;
+                bottom: -50px;
             }
         }
     }

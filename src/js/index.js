@@ -3,6 +3,8 @@ $(document).ready(Core);
 function Core()
 {
     InitSlick();
+    InitPlyr();
+
     SetTabSwitcher();
     SetModal();
 }
@@ -111,4 +113,9 @@ function InitSlick()
         focusOnSelect: true,
         rows: 0,
     })
+}
+
+function InitPlyr()
+{
+    const player = new Plyr('#player');
 }
