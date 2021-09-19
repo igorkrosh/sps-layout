@@ -567,4 +567,39 @@ section.sect-quote
     }
 }
 
+section.sect_quiz
+{
+    background: url(../images/bg/1.jpg);
+    .container
+    {
+        .wrapper
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 45px 20px;
+            background: #fff;
+
+            .item
+            {
+                display: flex;
+                align-items: center;
+                width: 30%;
+                font-size: 15px;
+
+                img
+                {
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .quiz-wrapper
+        {
+            padding: 70px 0;
+        }
+        
+    }
+}
+
 @import 'responce';
