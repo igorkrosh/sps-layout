@@ -9,17 +9,60 @@ html(lang="ru")
         title Document
         include pug/head.pug
     body
-        header 
-            .container
+        header.main
+            .container.navbar
                 .logo
-                    
-        section.main-sect
+                    img(src="assets/images/logo.png", alt="")
+                    .text
+                        span Studio Perfect Stone
+                        small Дениса Корианова
+                .graphic
+                    b Работаем по всей России
+                    span Пн.—Пт. с 9:00 до 18:00
+                .contacts.phone 
+                    a(href="")  +7 (963) 995-21-50
+                    .soc-wrapper
+                        a(href="").telegram
+                        a(href="").whatsapp
+                        a(href="").viber   
+            .menu.main
+                .container
+                    a(href="") Продукция 
+                    a(href="") Палитра
+                    a(href="") О компании
+                    a(href="") Отзывы
+                    a(href="") Работы
+                    a(href="") Вакансии
+                    a(href="") Контакты
 
-        .container
-            h1 Hi from PUG! 
-            +InputRadio('name', 'test')
-            
-            +Modal('test', 'ModalTemplate')
-            button(modal="test") Modal Test
+        section.main-sect
+            .container
+                .wrapper
+                    h1 
+                        |Изготовим мебель
+                        |и предметы интерьера
+                        |из 
+                        span искусственного камня
+                    .pluses-wrapper
+                        .plus.time От 3-х дней
+                        .plus.shield Гарантия до 10 лет
+                    button.btn.big Узнать стоимость
+            .slider-wrapper
+                .container
+                    .slider
+                        .image-pattern
+                            img(src="assets/images/main_slider/1.jpg", alt="")
+                        .image-pattern
+                            img(src="assets/images/main_slider/1.jpg", alt="")
+                        .image-pattern
+                            img(src="assets/images/main_slider/1.jpg", alt="")
+                    .nav
+        <svg class="svg">
+            <clipPath id="image-clip" clipPathUnits="objectBoundingBox">
+                <path d="M0.935,0.002,0.052,0.183 C0.021,0.189,0.001,0.204,0.001,0.22 L0,0.978 C0,0.99,0.021,1,0.046,1 A0.052,0.028,0,0,0,0.065,0.998 L0.954,0.816 c0.028,-0.006,0.046,-0.019,0.046,-0.033 v-0.761 C1,0.01,0.979,0,0.954,0 A0.052,0.028,0,0,0,0.935,0.002"></path>
+            </clipPath>
+        </svg>
+
+
 
         include pug/scripts.pug

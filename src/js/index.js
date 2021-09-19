@@ -2,6 +2,7 @@ $(document).ready(Core);
 
 function Core()
 {
+    InitSlick();
     SetTabSwitcher();
     SetModal();
 }
@@ -95,4 +96,19 @@ function HideModal(modalId)
         $(modalId + ' .modal__dialog').removeClass('fadeOutDownBig');
         $('.modal__backdrop').remove();
     });
+}
+
+function InitSlick()
+{
+    $('section.main-sect .slider').slick({
+        vertical: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        verticalSwiping: true,
+        appendArrows: $('section.main-sect .nav'),
+        prevArrow: '<button id="prev" type="button"></button>',
+        nextArrow: '<button id="next" type="button"></button>',
+        focusOnSelect: true,
+        rows: 0,
+    })
 }
