@@ -424,4 +424,23 @@ section.main-sect
     left: -500px;
 }
 
+section.tv-partners
+{
+    background: #f4f4f4;
+    padding: 25px 0;
+
+    .container
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        span
+        {
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+}
+
 @import 'responce';
