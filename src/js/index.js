@@ -115,6 +115,19 @@ function InitSlick()
         focusOnSelect: true,
         rows: 0,
     })
+
+    for (let i = 0; i < 7; i++)
+    {
+        $(`section.our-works .tab[tab-name="${i}"] .slider`).slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            prevArrow: '<button class="prev"></button>',
+            nextArrow: '<button class="next"></button>',
+            appendArrows: $(`section.our-works .tab[tab-name="${i}"] .dots`),
+            dots: true,
+            appendDots: $(`section.our-works .tab[tab-name="${i}"] .dots`),
+        })
+    }
 }
 
 function InitPlyr()
