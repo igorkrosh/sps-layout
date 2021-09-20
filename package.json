@@ -31,10 +31,12 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.8.4",
+    "animate.css": "^4.1.1",
     "bootstrap": "^5.0.0-beta2",
     "jquery": "^3.5.1",
     "plyr": "^3.6.8",
     "popper.js": "^1.14.3",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "wow.js": "^1.2.2"
   }
 }

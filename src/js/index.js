@@ -4,6 +4,7 @@ function Core()
 {
     InitSlick();
     InitPlyr();
+    InitWoW();
 
     SetTabSwitcher();
     SetModal();
@@ -118,4 +119,12 @@ function InitSlick()
 function InitPlyr()
 {
     const player = new Plyr('#player');
+}
+
+function InitWoW()
+{
+    let wow = new WOW({
+        animateClass: 'animate__animated',
+    })
+    wow.init();
 }
