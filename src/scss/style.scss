@@ -188,14 +188,14 @@ header.main
     height: 100%;
     background: #f6ede6;
     position: absolute;
-    left: 0;
+    right: 0;
     top: 0;
     z-index: -1;
 }
 
 .menu.main:after
 {
-    left: -500px;
+    right: 15%;
 }
 
 section.main-sect
@@ -597,6 +597,11 @@ section.sect_quiz
         .quiz-wrapper
         {
             padding: 70px 0;
+
+            img
+            {
+                width: 100%;
+            }
         }
         
     }

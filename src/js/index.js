@@ -8,6 +8,7 @@ function Core()
 
     SetTabSwitcher();
     SetModal();
+    SetMobileMenu();
 }
 
 function SetTabSwitcher()
@@ -127,4 +128,20 @@ function InitWoW()
         animateClass: 'animate__animated',
     })
     wow.init();
+}
+
+function SetMobileMenu()
+{
+    $('.btn__menu').on('click', function () {
+        if ($('.menu').hasClass('active'))
+        {
+            $(this).removeClass('active');
+            $('.menu').removeClass('active');
+        }
+        else
+        {
+            $(this).addClass('active');
+            $('.menu').addClass('active');
+        }
+    })
 }
