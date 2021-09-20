@@ -820,27 +820,104 @@ section.your_project
             {
                 margin: 40px 0;
             }
+        }
+    }
+}
 
-            .contacts-wrapper
+.contacts-wrapper
+{
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .tel b 
+    {
+        font-weight: 800;
+    }
+
+    .icon
+    {
+        width: 60px;
+        height: 60px;
+        display: block;
+    }
+}
+
+footer
+{
+    padding: 70px;
+    background: #3e2723;
+    color: #fff;
+
+    .container
+    {
+        display: flex;
+        justify-content: space-between;
+
+        ul
+        {
+            margin: 0;
+
+            li
             {
-                font-size: 22px;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
+                margin-bottom: 20px;
+                font-size: 15px;
+            }
 
-                .tel b 
-                {
-                    font-weight: 800;
-                }
+            li:last-child
+            {
+                margin-bottom: 0;
+            }
 
-                .icon
+            li:hover
+            {
+                color: #c9e574;
+                a 
                 {
-                    width: 60px;
-                    height: 60px;
-                    display: block;
+                    color: #bcaaa4;
                 }
             }
         }
+
+        .instagram
+        {
+            display: flex;
+            flex-direction: column;
+
+            a
+            {
+                margin-top: 25px;
+            }
+        }
+
+        .contacts-col
+        {
+            display: flex;
+            flex-direction: column;
+
+            .icon
+            {
+                margin-left: 10px;
+            }
+
+            .email
+            {
+                margin: 25px 0;
+            }
+
+            button
+            {
+                height: 75px;
+                border: none;
+                border-radius: 5px;
+                background: rgba(246, 237, 230, 0.1);
+                color: #fff;
+                font-size: 16px;
+                font-weight: 700;
+            }
+        }
+
     }
 }
 
