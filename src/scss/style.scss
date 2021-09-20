@@ -118,21 +118,6 @@ header
                 margin-left: 5px;
             }
 
-            .telegram
-            {
-                background-image: url(../images/icons/telegram.png);
-            }
-
-            .viber
-            {
-                background-image: url(../images/icons/viber.png);
-            }
-
-            .whatsapp
-            {
-                background-image: url(../images/icons/whatsapp.png);
-            }
-
         }
     }
 
@@ -148,6 +133,21 @@ header
         bottom: 0;
         margin: auto;
     }
+}
+
+.telegram
+{
+    background-image: url(../images/icons/telegram.png);
+}
+
+.viber
+{
+    background-image: url(../images/icons/viber.png);
+}
+
+.whatsapp
+{
+    background-image: url(../images/icons/whatsapp.png);
 }
 
 header.main
@@ -771,6 +771,73 @@ section.about_us
                 {
                     width: 75%;
                     font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+section.your_project
+{
+    .wrapper
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .img-wrapper
+        {
+            width: 50%;
+        }
+
+        .text
+        {
+            width: 40%;
+        }
+
+        .img-wrapper
+        {
+            img 
+            {
+                width: 100%;
+            }
+
+            .names
+            {
+                display: flex;
+                justify-content: space-around;
+                padding: 20px;
+                font-size: 15px;
+            }
+        }
+
+        .text
+        {
+            font-size: 18px;
+
+            p 
+            {
+                margin: 40px 0;
+            }
+
+            .contacts-wrapper
+            {
+                font-size: 22px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .tel b 
+                {
+                    font-weight: 800;
+                }
+
+                .icon
+                {
+                    width: 60px;
+                    height: 60px;
+                    display: block;
                 }
             }
         }
