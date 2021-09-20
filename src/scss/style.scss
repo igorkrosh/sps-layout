@@ -716,4 +716,65 @@ section.sect-table
     }
 }
 
+section.about_us
+{
+    background: #f5f7f8;
+
+    .wrapper
+    {
+        display: flex;
+        flex-wrap: wrap;
+
+        .col:nth-child(2)
+        {
+            width: 44%;
+
+            img
+            {
+                width: 100%;
+            }
+        }
+
+        .col:first-child
+        {
+            width: 55%;
+
+            display: flex;
+            flex-direction: column;
+            
+
+            .title
+            {
+                display: flex;
+                flex-direction: column;
+
+                small
+                {
+                    font-weight: 400;
+                    font-size: 23px;
+                }
+            }
+
+            .item
+            {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-bottom: 25px;
+
+                .img-wrapper
+                {
+                    width: 120px;
+                }
+
+                .text
+                {
+                    width: 75%;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
 @import 'responce';
