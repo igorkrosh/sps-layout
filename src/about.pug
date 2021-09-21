@@ -1,0 +1,100 @@
+include pug/mixins.pug
+
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        include pug/head.pug
+    body
+        header
+            .container.navbar
+                .logo
+                    img(src="assets/images/logo.png", alt="")
+                    .text
+                        span Studio Perfect Stone
+                        small Дениса Корианова
+                .graphic
+                    b Работаем по всей России
+                    span Пн.—Пт. с 9:00 до 18:00
+                .contacts.phone 
+                    a(href="")  +7 (963) 995-21-50
+                    .soc-wrapper
+                        a(href="").telegram
+                        a(href="").whatsapp
+                        a(href="").viber   
+            .menu
+                .container
+                    a(href="") Продукция 
+                    a(href="") Палитра
+                    a(href="") О компании
+                    a(href="") Отзывы
+                    a(href="") Работы
+                    a(href="") Вакансии
+                    a(href="") Контакты
+            +BtnMenu()
+        section.sect-title
+            .container
+                h2.title О компании
+                p Мы работаем с искусственным камнем с 2003 года. Изготавливаем изделия на своих производственных площадях в Москве, участвуем в телепроектах "Школа ремонта", "Идеальный ремонт", "Чистая работа", "Дачный ответ", "Фазенда лайф".
+                p В нашем офисе более 1000 образцов кварцевого и акрилового камня от 16 производителей, а среди выполненных работ есть такие, за которые не возьмутся другие компании.
+        section.tv-partners
+            .container.wow.animate__fadeInLeft(data-wow-delay="2.5s")
+                span Являемся партнерами телеканалов:
+                img(src="assets/images/tv/1.png", alt="")
+                img(src="assets/images/tv/2.png", alt="")
+                img(src="assets/images/tv/3.png", alt="")
+                img(src="assets/images/tv/4.png", alt="")
+                img(src="assets/images/tv/5.png", alt="")
+        section.guarantees
+            .container
+                h2.title Преимущества и гарантии
+                .wrapper
+                    .item
+                        b Бесплатный выезд мастера по Москве и 30 км от МКАД
+                        span Выберете цвет,рисунок и назовите размер, чтобы узнать точную стоимость по телефону.
+                        img(src="assets/images/icons/card_9.png", alt="")
+                    .item
+                        b Скидки от 2 до 20%
+                        span Дизайнерам и кухонным салонам. Программа лояльности — чем больше заявок, тем серьезнее выгода. Скидка 2% подписчикам Instagram.
+                        img(src="assets/images/icons/card_10.png", alt="")
+                    .item
+                        b Выбор из 1000 образцов акрилового и кварцевого камня
+                        span — привезем нужное вам количество образцов при вызове мастера. В офисе можно посмотреть все.
+                        img(src="assets/images/icons/card_11.png", alt="")
+                    .item
+                        b Цена известна заранее
+                        span По вашим размерам или чертежам мы рассчитаем максимально точно стоимость до выезда замерщика
+                        img(src="assets/images/icons/card_12.png", alt="")
+                .item-bottom
+                    img(src="assets/images/icons/warranty_1.png", alt="")
+                    .text
+                        b.title Изготовление в срок, указанный в договоре о сотрудничестве
+                        span Если не успеем, то сделаем монтаж бесплатно. Срок изготовления изделий от 3-х дней! Точные сроки зависят от загруженности производства и будут прописаны в договоре. Мы не размещаем заказы на сторонних производствах, делаем сами.
+                .item-bottom.white
+                    .text
+                        b.title 12 месяцев на изделие
+                        span Оказываем реальное гарантийное и постгарантийное обслуживание. Все выявленные недочеты в течение 1 года после установки устраняем бесплатно в течение 7 дней.
+                        button.btn.big Рассчитать стоимость
+                    img(src="assets/images/icons/warranty_2.png", alt="")
+        section.payment-question
+            .container
+                .col.text
+                    h2.title Вопросы оплаты
+                    .wrapper
+                        .item 
+                            img(src="assets/images/icons/card_1 (1).png", alt="")
+                            span Считаем смету в течение 1 рабочего дня*
+                        .item
+                            img(src="assets/images/icons/card_2 (1).png", alt="")
+                            span Аванс за материалы и производство до 80% от суммы
+                        .item
+                            img(src="assets/images/icons/card_3 (1).png", alt="")
+                            span Аванс за материалы и производство до 80% от суммы
+                        .item
+                            img(src="assets/images/icons/card_4.png", alt="")
+                            span Аванс за материалы и производство до 80% от суммы
+                .col.img
+                    img(src="assets/images/bg/man.png", alt="")

@@ -1103,4 +1103,135 @@ section.our-works
         }
     }
 }
+
+section.sect-title
+{
+    padding: 70px 0;
+    background: url(../images/bg/bg_kitchen.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+
+    .title
+    {
+        margin-top: 0;
+    }
+
+    
+}
+
+section.guarantees
+{
+    .wrapper
+    {
+        display: flex;
+        flex-wrap: wrap;
+
+        .item
+        {
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 25px;
+
+            b 
+            {
+                font-size: 20px;
+                margin-bottom: 25px;
+            }
+
+            span 
+            {
+                font-size: 15px;
+                margin-bottom: 25px;
+            }
+
+            img
+            {
+                margin-top: auto;
+                margin-left: auto;
+            }
+        }
+
+        .item:nth-child(2n + 1)
+        {
+            background: #f5f7f8;
+        }
+    }
+
+    .item-bottom
+    {
+        margin-top: 20px;
+        display: flex;
+        background: #f6ede6;
+        padding: 40px;
+        padding-bottom: 0;
+        align-items: center;
+
+        .text
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            b 
+            {
+                font-size: 36px;
+                margin-bottom: 20px;
+            }
+
+            span
+            {
+                margin-bottom: 25px
+            }
+        }
+    }
+
+    .item-bottom.white
+    {
+        background: #f5f7f8;
+    }
+}
+
+section.payment-question
+{
+    background: #f6ede6;
+    padding-top: 70px;
+
+    .container
+    {
+        display: flex;
+    }
+
+    .col.img
+    {
+        display: flex;
+        align-items: flex-end;
+        img 
+        {
+            width: 100%;
+        }
+    }
+
+    .col.text
+    {
+        padding-bottom: 70px;
+    }
+
+    .wrapper
+    {
+        .item
+        {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+
+            img
+            {
+                margin-right: 20px;
+            }
+        }
+    }
+}
 @import 'responce';
